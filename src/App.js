@@ -1,23 +1,43 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState, useEffect } from "react";
+import { Route, Routes, BrowserRouter, useLocation } from "react-router-dom";
+import Authen from "./Component/Authen/authen";
+import Home from "./Component/Home";
+import Info from "./Component/Infor";
+import DetailItem from "./Component/DetailItem";
+import Update from "./Component/Update";
+import data from "./db.json";
 
 function App() {
+  const [active, setActive] = useState(false);
+
+  const toggleSidebar = () => {
+    setActive(!active);
+  };
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Authen />} />
+          <Route
+            path="/home"
+            element={<Home active={active} toggleSidebar={toggleSidebar} />}
+          />
+          <Route
+            path="/thongtin"
+            element={<Info active={active} toggleSidebar={toggleSidebar} />}
+          />
+          <Route
+            path="/chitiet/:itemId"
+            element={
+              <DetailItem active={active} toggleSidebar={toggleSidebar} />
+            }
+          />
+
+          <Route path="/capnhat/:itemId" element={<Update />} />
+        </Routes>
+      </BrowserRouter>
+
+      {/* <Test/> */}
     </div>
   );
 }
