@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/ProjectAccu/static/css/main.be4e6545.css",
+    "main.js": "/ProjectAccu/static/js/main.b97d1512.js",
+    "static/js/787.6ee1bc8c.chunk.js": "/ProjectAccu/static/js/787.6ee1bc8c.chunk.js",
+    "static/media/image 23.png": "/ProjectAccu/static/media/image 23.e438cc6bb8e6209cd3b0.png",
+    "static/media/logo-fpt-tel.png": "/ProjectAccu/static/media/logo-fpt-tel.c1587ef5c67e18242338.png",
+    "static/media/logo-fpt.jpg": "/ProjectAccu/static/media/logo-fpt.cee8deb713f0d2c1751d.jpg",
+    "index.html": "/ProjectAccu/index.html",
+    "main.be4e6545.css.map": "/ProjectAccu/static/css/main.be4e6545.css.map",
+    "main.b97d1512.js.map": "/ProjectAccu/static/js/main.b97d1512.js.map",
+    "787.6ee1bc8c.chunk.js.map": "/ProjectAccu/static/js/787.6ee1bc8c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.be4e6545.css",
+    "static/js/main.b97d1512.js"
+  ]
+}
